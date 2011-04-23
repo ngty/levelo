@@ -1,7 +1,9 @@
 Object subclass: #Thing.
 thing := Thing new.
-thing whoami
-  printNl.
+
+[ thing whoami ]
+  on: MessageNotUnderstood
+  do: [ :sig| sig printNl ].
 
 Thing extend [
   whoami [ ]
