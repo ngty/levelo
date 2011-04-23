@@ -7,4 +7,5 @@ class Thing
   end
 end
 
-puts Thing.new.whoami
+puts \
+  Thing.new.whoami
